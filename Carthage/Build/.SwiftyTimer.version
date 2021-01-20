@@ -1,0 +1,11 @@
+{
+  "commitish" : "2.1.0",
+  "Mac" : [
+    {
+      "hash" : "21f5807574c5b7fee30263c421a4ffab2344a7b8a98a5cf232170e770780b1d7",
+      "name" : "SwiftyTimer",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+    }
+  ]
+}
