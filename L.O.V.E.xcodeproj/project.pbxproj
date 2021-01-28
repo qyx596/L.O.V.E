@@ -12,6 +12,7 @@
 		9599408B22217B3700DC0EAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9599408A22217B3700DC0EAD /* Assets.xcassets */; };
 		95BCE9BE25B7D6DE00070718 /* SwiftyTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862BA43B22DF1F6800FF1E18 /* SwiftyTimer.framework */; };
 		95BCE9BF25B7D6DE00070718 /* SwiftyTimer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 862BA43B22DF1F6800FF1E18 /* SwiftyTimer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		95F2573625C2545400C8D9F8 /* functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F2573525C2545400C8D9F8 /* functions.swift */; };
 		95FB9B41255CDD8B00DC9C52 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95FB9B43255CDD8B00DC9C52 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -32,13 +33,14 @@
 /* Begin PBXFileReference section */
 		862BA43B22DF1F6800FF1E18 /* SwiftyTimer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyTimer.framework; path = Carthage/Build/Mac/SwiftyTimer.framework; sourceTree = "<group>"; };
 		954CB0F5227AE3600019F03F /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		95613B122273E4BA0086435E /* Awesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Awesome.framework; path = Carthage/Build/Mac/Awesome.framework; sourceTree = "<group>"; };
 		9566B491255D1358004A619C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9599408522217B3600DC0EAD /* L.O.V.E.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = L.O.V.E.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9599408822217B3600DC0EAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9599408A22217B3700DC0EAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9599408F22217B3700DC0EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9599409022217B3700DC0EAD /* L_O_V_E.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = L_O_V_E.entitlements; sourceTree = "<group>"; };
+		95F256D525C19F2400C8D9F8 /* L.O.V.E.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = L.O.V.E.entitlements; sourceTree = "<group>"; };
+		95F2573525C2545400C8D9F8 /* functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
 		95FB9B44255CDDB500DC9C52 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				862BA43B22DF1F6800FF1E18 /* SwiftyTimer.framework */,
-				95613B122273E4BA0086435E /* Awesome.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,12 +84,14 @@
 		9599408722217B3600DC0EAD /* L.O.V.E */ = {
 			isa = PBXGroup;
 			children = (
+				95F256D525C19F2400C8D9F8 /* L.O.V.E.entitlements */,
 				9599408822217B3600DC0EAD /* AppDelegate.swift */,
 				954CB0F5227AE3600019F03F /* MainMenu.xib */,
 				9599408A22217B3700DC0EAD /* Assets.xcassets */,
 				9599408F22217B3700DC0EAD /* Info.plist */,
 				9599409022217B3700DC0EAD /* L_O_V_E.entitlements */,
 				95FB9B43255CDD8B00DC9C52 /* Localizable.strings */,
+				95F2573525C2545400C8D9F8 /* functions.swift */,
 			);
 			path = L.O.V.E;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9599408922217B3600DC0EAD /* AppDelegate.swift in Sources */,
+				95F2573625C2545400C8D9F8 /* functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = L.O.V.E/L.O.V.E.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -342,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = L.O.V.E/L.O.V.E.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
